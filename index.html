@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Wizards | Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article class="profile-card" data-testid="test-profile-card">
+      <figure class="avatar">
+        <img
+          src="pfp.jpg"
+          alt="Profile photo of Oluwafunmito Adejuwon"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <section>
+        <header>
+          <h2 data-testid="test-user-name">Oluwafunmito Adejuwon</h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+          Passionate frontend developer exploring AI and web technologies.
+          Building accessible and scalable solutions for the modern web.
+        </p>
+
+        <section>
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Coding</li>
+            <li>Basketball</li>
+            <li>Watching anime</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Poor UI design</li>
+            <li>Slow websites</li>
+            <li>Unclear documentation</li>
+          </ul>
+        </section>
+
+        <nav aria-label="Social links">
+          <ul data-testid="test-user-social-links">
+            <li>
+              <a
+                href="https://twitter.com/mellamofunmito"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/a-v-o"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/oluwafunmito-adejuwon"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <p>
+          Current Time (ms):
+          <span data-testid="test-user-time" id="user-time"></span>
+        </p>
+      </section>
+    </article>
+
+    <script src="app.js"></script>
+  </body>
+</html>
