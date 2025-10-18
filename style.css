@@ -26,6 +26,17 @@ h2 {
   border-radius: 50%;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: url("star-regular-full.svg");
+}
+
+nav {
+  margin-top: 16px;
+}
+
 nav ul {
   list-style: none;
   padding: 0;
