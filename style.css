@@ -1,23 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+
 body {
-  min-height: 100vh;
   font-family: "Inter", sans-serif;
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  background-color: rgb(251, 246, 237);
+}
+
+main {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h1,h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+.homepage {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f0f2f5;
+  padding: 0;
+}
+
+.navigation {
+  height: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
 }
 
 .profile-card {
+  min-height: 70vh;
   display: flex;
   background: white;
   width: 60%;
   border-radius: 10px;
   padding: 1.5rem;
-}
-
-h2 {
-  font-size: 1.5rem;
+  box-shadow: 2px 2px 0 0;
 }
 
 .avatar img {
@@ -29,36 +71,92 @@ h2 {
 ul {
   margin: 0;
   padding: 0;
-  list-style-type: none;
-  list-style-image: url("star-regular-full.svg");
-}
-
-nav {
-  margin-top: 16px;
-}
-
-nav ul {
   list-style: none;
-  padding: 0;
+}
+
+.social-links ul {
+  margin-top: 16px;
   display: flex;
   gap: 1rem;
   justify-content: center;
 }
 
-nav a {
+a {
   text-decoration: none;
-  color: #0077b6;
+  color: #b60000;
 }
 
-nav a:focus,
-nav a:hover {
+ a:focus,
+ a:hover {
   text-decoration: underline;
 }
 
-/* Responsive Layout */
+.time {
+  text-align: center;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+input, textarea {
+  width: 280px;
+  height: 24px;
+  border: solid 1px gray;
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.submit {
+  padding: 12px;
+  border: solid 1px gray;
+  cursor: pointer;
+  background-color:black;
+  border-radius: 8px;
+  color: white;
+}
+
+.submit:hover {
+ background-color:#2a2929;
+ 
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
 @media (max-width: 700px) {
   body {
-    padding: 1.5rem 0;
+    padding: 3rem 0;
+  }
+
+  main {
+    padding: 0 2rem;
   }
 
   .avatar {
@@ -68,7 +166,7 @@ nav a:hover {
     justify-content: center;
   }
 
-  h2 {
+  .name {
     text-align: center;
   }
 
@@ -78,6 +176,9 @@ nav a:hover {
     align-items: flex-start;
     width: 70%;
     padding: 2rem;
+  }
 
+  .contact-page {
+    justify-content: start;
   }
 }
