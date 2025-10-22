@@ -107,20 +107,37 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 12px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
 }
 
 input, textarea {
-  width: 280px;
+  width: 320px;
   height: 24px;
+  background-color: transparent;
   border: solid 1px gray;
   border-radius: 8px;
   padding: 4px;
+  font-family: "Inter", sans-serif;
+}
+
+input:focus {
+  outline: 1px solid gray;
+  outline-offset: 2px;
+}
+
+textarea {
+  min-height: 120px;
+  padding: 8px;
+}
+
+textarea:focus {
+  outline: none;
 }
 
 .submit {
@@ -130,6 +147,7 @@ input, textarea {
   background-color:black;
   border-radius: 8px;
   color: white;
+  font-family: "Inter", sans-serif;
 }
 
 .submit:hover {
@@ -139,14 +157,12 @@ input, textarea {
 
 .error {
   color: red;
-  font-size: 0.9rem;
+  margin: 0;
 }
 
 .success {
   color: green;
-  font-weight: bold;
   text-align: center;
-  margin-top: 1rem;
 }
 
 
